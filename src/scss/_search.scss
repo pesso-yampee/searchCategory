@@ -1,0 +1,23 @@
+.search-box {
+  display: flex;
+}
+.group {
+  .inr {
+    .block {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      ul {
+        display: flex;
+        li {
+          &:not(:last-child) {
+            margin-right: 20px;
+          }
+        }
+      }
+      &.is-hide {
+        display: none;
+      }
+    }
+  }
+}

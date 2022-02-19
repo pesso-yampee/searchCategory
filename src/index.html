@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <title>複数カテゴリ検索</title>
+</head>
+<body>
+  <div id="main-contents">
+    <div class="wrap">
+      <main class="main">
+        <div class="category">
+          <div class="container">
+            <div class="inner">
+              <form>
+                <div class="search-box category">
+                  <label><input class="check-test" type="checkbox" name="category" value="all" checked="checked"><span class="current">すべて</span></label>
+                  <label><input class="check-test" type="checkbox" name="category" value="htmlcss"><span>HTML・CSS</span></label>
+                  <label><input class="check-test" type="checkbox" name="category" value="javaScript"><span>JavaScript</span></label>
+                  <label><input class="check-test" type="checkbox" name="category" value="cms"><span>CMS</span></label>
+                  <label><input class="check-test" type="checkbox" name="category" value="ruby"><span>Ruby</span></label>
+                  <label><input class="check-test" type="checkbox" name="category" value="python"><span>Python</span></label>
+                  <label><input class="check-test" type="checkbox" name="category" value="php"><span>PHP</span></label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div><!-- ./category -->
+        <div class="genre baseColorSection">
+          <div class="container">
+            <div class="genre_inner">
+              <form>
+                <div class="search-box genre1">
+                  <p>フレームワーク</p>
+                  <div class="tag">
+                    <label><input type="checkbox" name="framework" value="laravel"><span>Laravel</span></label>
+                    <label><input type="checkbox" name="framework" value="react"><span>React</span></label>
+                    <label><input type="checkbox" name="framework" value="vue"><span>Vue</span></label>
+                    <label><input type="checkbox" name="framework" value="rails"><span>Rails</span></label>
+                    <label><input type="checkbox" name="framework" value="angular"><span>Angular</span></label>
+                  </div>
+                </div>
+                <div class="search-box genre2">
+                  <p>企業</p>
+                  <div class="tag">
+                    <label><input type="checkbox" name="company" value="rakuten"><span>楽天</span></label>
+                    <label><input type="checkbox" name="company" value="yahoo"><span>Yahoo</span></label>
+                    <label><input type="checkbox" name="company" value="line"><span>LINE</span></label>
+                    <label><input type="checkbox" name="company" value="softbank"><span>SoftBank</span></label>
+                    <label><input type="checkbox" name="company" value="google"><span>Google</span></label>
+                    <label><input type="checkbox" name="company" value="amazon"><span>Amazon</span></label>
+                    <label><input type="checkbox" name="company" value="facebook"><span>Facebook</span></label>
+                    <label><input type="checkbox" name="company" value="cyberagent"><span>サイバーエージェント</span></label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div><!-- ./genre baseColorSection -->
+				<section class="section">
+          <div class="column02 case">
+					<div class="group">
+						<div class="inr">
+							<div class="block js-work" data-category='htmlcss' data-framework='["laravel"]' data-company='["cyberagent", "line"]'>
+								<div class="wp">
+                  <div class="inr">
+                    <div class="word">
+                      <h3>A</h3>
+                      <ul>
+                        <li>Laravel</li>
+                        <li>サイバーエージェント</li>
+                        <li>LINE</li>
+                      </ul>
+                    </div>
+                  </div>
+								</div>
+							</div>
+							<div class="block js-work" data-category='htmlcss' data-framework='["laravel", "vue"]' data-company='[ "yahoo", "line"]'>
+								<div class="wp">
+                  <div class="inr">
+                      <div class="word">
+                        <h3>B</h3>
+                        <ul>
+                          <li>Laravel</li>
+                          <li>vue</li>
+                          <li>Yahoo</li>
+                          <li>LINE</li>
+                        </ul>
+                      </div>
+                  </div>
+								</div>
+							</div>
+							
+							<div class="block js-work"  data-category='ruby' data-framework='["laravel", "rails"]' data-company='["cyberagent", "yahoo"]'>
+								<div class="wp">
+                  <div class="inr">
+                    <div class="word">
+                      <h3>C</h3>
+                      <ul>
+                        <li>Laravel</li>
+                        <li>rails</li>
+                        <li>サイバーエージェント</li>
+                        <li>Yahoo</li>
+                      </ul>
+                    </div>
+                  </div>
+								</div>
+							</div>
+							
+							<div class="block js-work" data-category='ruby' data-framework='["laravel", "angular"]' data-company='["yahoo", "line"]'>
+								<div class="wp">
+                  <div class="inr">
+                    <div class="word">
+                      <h3>D</h3>
+                      <ul>
+                        <li>Laravel</li>
+                        <li>angular</li>
+                        <li>Yahoo</li>
+                        <li>LINE</li>
+                      </ul>
+                    </div>
+                  </div>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				  </div>
+        </section>
+        </main>
+      </div><!-- ./wrap -->
+    </div><!-- ./main-contents -->
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>
